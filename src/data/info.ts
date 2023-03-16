@@ -10,13 +10,13 @@ export const info = {
 
   experience: [
     {
-      name: "Sabag Producciones — ",
-      location: "Full Stack Developer ",
+      name: "Sabag Producciones",
+      location: "Full Stack Developer",
       startDate: "Apr 2021",
       endDate: "Aug 2022",
       description: [
-        "-Webpack / Git / Resposive Design in PHP TWIG SASS CSS MySQL JavaScript",
-        "-Storybook UI Development / Stack upgrade to React",
+        "✓ Webpack / Git / Resposive Design in PHP TWIG SASS CSS MySQL JavaScript",
+        "✓ Storybook UI Development / Stack upgrade to React",
       ],
     },
 
