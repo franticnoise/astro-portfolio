@@ -1,7 +1,7 @@
 ---
 import { IProjectDetails } from "@types";
 const { projectDetail } = Astro.props as IProjectDetails;
-const { title, thumbnail, liveUrl, githubUrl } = projectDetail;
+const { title, thumbnail, liveUrl, tech, githubUrl } = projectDetail;
 ---
 
 <article class="w-full max-h-[25rem] overflow-hidden relative group">
@@ -71,5 +71,6 @@ const { title, thumbnail, liveUrl, githubUrl } = projectDetail;
     class="absolute w-full bottom-0 left-0 backdrop-blur-md dark:text-white text-white bg-black/50 p-4 translate-y-[100%] group-hover:translate-y-0 transition duration-700"
   >
     <h3 class="mr-2 text-xl">{title}</h3>
+    <h3 class="mr-2 text-base text-yellow-200">{tech}</h3>
   </div>
 </article>

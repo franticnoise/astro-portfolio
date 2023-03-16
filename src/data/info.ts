@@ -1,97 +1,117 @@
 export const info = {
-  baseUrl: "https://astro-portfolio-uzair.vercel.app",
-  name: "Uzair Ahmed",
+  baseUrl: "https://matiasbenamo.vercel.app",
+  name: "Matias Benamo",
   jobDescription: "Web Developer",
-  about: `I'm a software engineer based in Karachi, Pakistan.
-   I enjoy creating things that live on the internet, whether that be websites, applications, or anything in between.
-   I have been working for 3 year, with a demonstrated history of working in the Computer Software industry. Skilled in Front-end Development.
-   I have 3 years of experience in HTML, CSS, SCSS, JavaScript, Bootstrap, tailwind CSS, StyledComponent, React JS and Next JS. Hence,
-   I have successfully completed several web projects from scratch. 
-   Yet, I learn continuously and never stop exploring new technologies.
-   So, I have also gained knowledge of Node JS, Express JS, Mongo DB, Python,
-   firebase and React Native with time.
+  about: `Experienced front-end & back-end programmer adept in all stages of web development. Knowledgeable in 
+  user interface, testing, and debugging processes. Bringing forth expertise in the installation and maintenance of web systems. 
+  Proficient in PHP, JavaScript, React, CSS and HTML. Passionate about learning additional technologies and coding languages. 
+  Able to effectively self-manage during independent projects, as well as collaborating in a team setting. 
   `,
 
   experience: [
     {
-      name: "InterNative Labs, LLC",
-      location: "Karāchi, Sindh, Pakistan",
-      startDate: "Apr 2022",
-      endDate: "Present",
+      name: "Sabag Producciones — ",
+      location: "Full Stack Developer ",
+      startDate: "Apr 2021",
+      endDate: "Aug 2022",
       description: [
-        "- Developing screens and UI components for the web application using React and Tailwind.",
-        "- Fixing UI issues and integrating backend APIs with Redux Saga.",
+        "-Webpack / Git / Resposive Design in PHP TWIG SASS CSS MySQL JavaScript",
+        "-Storybook UI Development / Stack upgrade to React",
       ],
     },
 
     {
-      name: "Coupon Approve (Remote)",
-      location: "Amsterdam, North Holland, Netherlands",
-      startDate: "Nov 2020",
-      endDate: "Apr 2022",
+      name: "FranticNoise.com",
+      location: "Max / MSP / Jitter developer",
+      startDate: "Nov 2013",
+      endDate: "Apr 2019",
       description: [
-        "✓ Developing code in accordance with appropriate design and architectural rules",
-        "✓ Documenting, testing, deployment, maintenance, support of platforms, applications, databases and solutions",
-        "✓ Help and training of other colleagues",
-        "✓ Others tasks connected to the nature of the job",
-        "✓ Code Improvements and Refactoring ",
-        "✓ Best Practices and Rules Maintainer",
+        "✓ Worked in a wide range of music and multimedia instruments and tools. ",
+        "✓ Adobe Creative Suite (Photoshop, Premiere Pro, Illustrator)",
+        "✓ http://franticnoise.gumroad.com",
       ],
     },
 
     {
-      name: "Interns Pakistan",
-      location: "Pakistan",
-      startDate: "Oct 2020",
-      endDate: "Nov 2020",
+      name: "IBM",
+      location: "Frontend/Backend PHP Developer",
+      startDate: "Oct 2006",
+      endDate: "Nov 2012",
       description: [
-        "An Immersive Internship Program that prepares me for the world's most in-demand career. A six weeks program completely based on learning and challenges.",
-        "The internship track is built by an industry expert that let develop the skills in the areas most important ",
+        "✓  Web Developer Team leader. Technologies: PHP, ASP, HTML/CSS, Python, Bash, Apache",
+        "✓ QMail server / Named DNS daemon, SQL DB2 SQL, PostgreSQL, Oracle SQL",
+        "✓ Internet forwarders (NAT) and security firewalls, etc.",
       ],
     },
   ],
 
   education: [
     {
-      name: "Pakistan Institute of Professional Science & Technology (PIPS-TECH)",
-      location: "Karāchi, Sindh, Pakistan",
-      startDate: "2019",
-      endDate: "2022",
+      name: "Universidad de Buenos Aires",
+      location: "Buenos Aires, Argentina",
+      startDate: "2001",
+      endDate: "2002",
       description: [
-        "Diploma of Associate Engineering,  Computer Information Technology (CIT)",
+        "Ingeniera en Sistemas Informáticos",
       ],
     },
     {
-      name: "Govt. Degree Boys College Buffer Zone",
-      location: "Karāchi, Sindh, Pakistan",
-      startDate: "2018",
-      endDate: "2020",
-      description: ["Intermediate, Pre-Engineering"],
+      name: "Cisco Systems Academy",
+      location: "Fundación Proydesa, Buenos Aires, Argentina",
+      startDate: "2003",
+      endDate: "2004",
+      description: ["Network Administrator Degree (CCNA 604/607)"],
     },
     {
-      name: "Ghazi Foundation Schools & Colleges",
-      location: "Karāchi, Sindh, Pakistan",
-      startDate: "2016",
-      endDate: "2018",
-      description: ["Matriculation,  Computer Science"],
+      name: "Liceo Cultural Británico",
+      location: "Buenos Aires, Argentina",
+      startDate: "1992",
+      endDate: "2002",
+      description: ["First Certificate Exam degree (FCE)"],
     },
   ],
 
   socialMedia: {
-    facebook: "https://www.facebook.com/profile.php?id=100022899849583",
-    twitter: "https://twitter.com/Uzzii_21",
-    github: "https://github.com/uzzii-21",
-    email: "uzairahmed@74372gmail.com",
-    linkedin: "https://www.linkedin.com/in/uzzii21/",
+    facebook: "hhttps://www.facebook.com/MatiasZNoise",
+    twitter: "https://twitter.com/FranticNoise",
+    github: "https://github.com/franticnoise",
+    email: "z1priano@gmail.com",
+    linkedin: "https://www.linkedin.com/in/matiasbenamo/",
   },
 
   projects: [
     {
-      title: "Astro Portfolio",
+      title: "Lu Studio",
+      tech: "HTML/CSS, Javascript, React, Tailwind",
       isFeatured: true,
-      thumbnail: "/assets/images/astro-portfolio.png",
+      thumbnail: "/assets/images/mbportfoliolustudio.dev.JPG",
+      githubUrl: "https://github.com/uzzii-21/astro-portfolio",
+      liveUrl: "https://www.lustudio.dev",
+    },
+    {
+      title: "Frantic Noise",
+      tech: "HTML/CSS, Javascript, JSON, Tailwind",
+      isFeatured: true,
+      thumbnail: "/assets/images/mbportfoliofrantic.JPG",
       githubUrl: "https://github.com/uzzii-21/astro-portfolio",
       liveUrl: "https://astro-portfolio-uzair.vercel.app/",
+    },
+    {
+      title: "Alejandra Portfolio",
+      tech: "HTML/CSS, Javascript, React, Typescript",
+      isFeatured: true,
+      thumbnail: "/assets/images/mbportfolioalejandra.JPG",
+      githubUrl: "https://github.com/uzzii-21/astro-portfolio",
+      liveUrl: "https://acharpentier.vercel.app/",
+    },
+
+    {
+      title: "Atsui Ramen Online Ordering App",
+      tech: "HTML/CSS, Javascript, React, Tailwind",
+      isFeatured: true,
+      thumbnail: "/assets/images/mbportfolioramne.JPG",
+      githubUrl: "https://github.com/uzzii-21/astro-portfolio",
+      liveUrl: "https://atsui-henna.vercel.app/",
     },
   ],
 };

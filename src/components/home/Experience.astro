@@ -2,11 +2,12 @@
 import { IExperiences } from "@types";
 
 const { title, details } = Astro.props as IExperiences;
+//if (Astro.props.title == "EDUCATION") {let sectionId = "education";} else { let sectionId = "experience" }
+//id={sectionId}
+
 ---
 
-<section
-  class="flex items-start justify-between flex-col sm:flex-row dark:text-light"
->
+<section id={Astro.props.title} class="flex items-start justify-between flex-col sm:flex-row dark:text-light">
   <h2 class="w-[15rem] mt-16">{title}</h2>
   <div class="w-full">
     {
