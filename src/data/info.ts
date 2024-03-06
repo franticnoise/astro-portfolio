@@ -10,6 +10,15 @@ export const info = {
 
   experience: [
     {
+      name: "Beyond Expect",
+      location: "Software Integration Engineer / Salesforce Developer",
+      startDate: "March 2023",
+      endDate: "Current Day",
+      description: [
+        "Contracted as an Adobe Developer & Salesforce Developer for Amazon Prime Video. My current role as a Software Integration Engineer involves injecting Salesforce data into the Adobe Creative Suite through the development of an Electron App that bridges both worlds.",
+      ],
+    },
+    {
       name: "Sabag Producciones",
       location: "Full Stack Developer",
       startDate: "Apr 2021",
