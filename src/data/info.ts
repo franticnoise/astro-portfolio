@@ -82,14 +82,22 @@ export const info = {
   ],
 
   socialMedia: {
-    facebook: "hhttps://www.facebook.com/MatiasZNoise",
+    linkedin: "https://www.linkedin.com/in/matiasbenamo/",
     twitter: "https://twitter.com/FranticNoise",
     github: "https://github.com/franticnoise",
-    email: "z1priano@gmail.com",
-    linkedin: "https://www.linkedin.com/in/matiasbenamo/",
+    email: "matias.benamo@beyondexpect.com",
+
   },
 
   projects: [
+    {
+      title: "Ritornello",
+      tech: "React, JS, HTML/CSS/Tailwind",
+      isFeatured: true,
+      thumbnail: "/assets/images/ritornello.png",
+     
+      liveUrl: "https://ritornello.vercel.app/",
+    },
     {
       title: "Lu Studio",
       tech: "HTML/CSS, Javascript, React, Tailwind",
