@@ -94,6 +94,7 @@ export const info = {
       tech: "WordPress / Elementor",
       isFeatured: true,
       thumbnail: "/assets/images/ritornello.png",
+      githubUrl: "https://github.com/franticnoise",
       liveUrl: "https://www.hrglobal.info/",
     },
     
@@ -102,6 +103,7 @@ export const info = {
       tech: "React, JS, HTML/CSS/Tailwind",
       isFeatured: true,
       thumbnail: "/assets/images/ritornello.png", 
+      githubUrl: "https://github.com/franticnoise",
       liveUrl: "https://ritornello.vercel.app/",
     },
     {
@@ -128,7 +130,6 @@ export const info = {
       githubUrl: "https://github.com/franticnoise",
       liveUrl: "https://acharpentier.vercel.app/",
     },
-
     {
       title: "Atsui Ramen Online Ordering App",
       tech: "HTML/CSS, Javascript, React, Tailwind",
