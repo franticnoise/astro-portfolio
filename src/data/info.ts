@@ -108,8 +108,7 @@ export const info = {
       title: "Ritornello",
       tech: "React, JS, HTML/CSS/Tailwind",
       isFeatured: true,
-      thumbnail: "/assets/images/ritornello.png",
-     
+      thumbnail: "/assets/images/ritornello.png", 
       liveUrl: "https://ritornello.vercel.app/",
     },
     {
