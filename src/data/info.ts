@@ -89,15 +89,6 @@ export const info = {
   },
 
   projects: [
-    {
-      title: "Tier UX",
-      tech: "React JS & Spline for Open GL Graphics",
-      isFeatured: true,
-      thumbnail: "/assets/images/tierux.png",
-      githubUrl: "https://github.com/franticnoise",
-      liveUrl: "https://tier-ux.vercel.app",
-    },
-  
      {
       title: "HR Global",
       tech: "WordPress / Elementor",
@@ -105,15 +96,21 @@ export const info = {
       thumbnail: "/assets/images/hrglobal.png",
       githubUrl: "https://github.com/franticnoise",
       liveUrl: "https://www.hrglobal.info/",
-    },
-    
-    {
+     },
+     {
       title: "Ritornello",
-      tech: "React, JS, HTML/CSS/Tailwind",
+      tech: "React JS + HTML/CSS/Tailwind",
       isFeatured: true,
       thumbnail: "/assets/images/ritornello.png", 
       githubUrl: "https://github.com/franticnoise",
       liveUrl: "https://ritornello.vercel.app/",
+    },
+    {
+      title: "Tier UX",
+      tech: "React JS + Spline for 3D Graphics",
+      isFeatured: true,
+      thumbnail: "/assets/images/tierux.png",
+      liveUrl: "https://tier-ux.vercel.app",
     },
     {
       title: "Lu Studio",
@@ -139,13 +136,13 @@ export const info = {
       githubUrl: "https://github.com/franticnoise",
       liveUrl: "https://acharpentier.vercel.app/",
     },
-    {
-      title: "Atsui Ramen Online Ordering App",
-      tech: "HTML/CSS, Javascript, React, Tailwind",
-      isFeatured: true,
-      thumbnail: "/assets/images/mbportfolioramne.JPG",
-      githubUrl: "https://github.com/franticnoise",
-      liveUrl: "https://atsui-henna.vercel.app/",
-    },
+    // {
+    //   title: "Atsui Ramen Online Ordering App",
+    //   tech: "HTML/CSS, Javascript, React, Tailwind",
+    //   isFeatured: true,
+    //   thumbnail: "/assets/images/mbportfolioramne.JPG",
+    //   githubUrl: "https://github.com/franticnoise",
+    //   liveUrl: "https://atsui-henna.vercel.app/",
+    // },
   ],
 };
