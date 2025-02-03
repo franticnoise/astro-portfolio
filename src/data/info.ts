@@ -89,6 +89,15 @@ export const info = {
   },
 
   projects: [
+    {
+      title: "Tier UX",
+      tech: "React JS & Spline for Open GL Graphics",
+      isFeatured: true,
+      thumbnail: "/assets/images/tierux.png",
+      githubUrl: "https://github.com/franticnoise",
+      liveUrl: "https://tier-ux.vercel.app",
+    },
+  
      {
       title: "HR Global",
       tech: "WordPress / Elementor",
