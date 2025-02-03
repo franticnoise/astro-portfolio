@@ -10,8 +10,8 @@ export const info = {
 
   experience: [
     {
-      name: "BeyondSoft (https://www.beyondsoft.com/)",
-      location: "Systems Integration Engineer / Salesforce Developer",
+      name: "BeyondSoft / Amazon",
+      location: "Solutions Architect - System Integration  - Salesforce Developer",
       startDate: "March 2023",
       endDate: "Current Day",
       description: [
