@@ -2,11 +2,10 @@ export const info = {
   baseUrl: "https://matiasbenamo.vercel.app",
   name: "Matias Benamo",
   jobDescription: "Web Developer",
-  about: `Experienced front-end & back-end programmer adept in all stages of web development. Knowledgeable in 
-  user interface, testing, and debugging processes. Bringing forth expertise in the installation and maintenance of web systems. 
-  Proficient in PHP, JavaScript, React, CSS and HTML. Passionate about learning additional technologies and coding languages. 
-  Able to effectively self-manage during independent projects, as well as collaborating in a team setting. 
-  `,
+  about: `Experienced developer knowledgeable in user interfaces, databases, systems integration, testing, and debugging processes. 
+  Bringing forth expertise in testing, installation, maintenance of software systems. Proficient in JavaScript, PHP, Salesforce 
+  Apex and Visualforce, APIs, SQL, Electron JS, Wordpress, CSS/SASS/HTML. Some of companies I’ve worked for include: amazon.com, 
+  ibm.com, cafebritt.com, excen.com.ar, aena.es, among others.`,
 
   experience: [
     {
@@ -15,8 +14,8 @@ export const info = {
       startDate: "March 2023",
       endDate: "Current Day",
       description: [
-        "Contracted as an Adobe Developer & Salesforce Developer for Amazon Prime Video. My current role as a Software Integration Engineer involves injecting Salesforce data into the Adobe Creative Suite through the development of an Electron App that bridges both worlds.",
-        "✓ APEX / Lightning Web Components / JS / API / Electron / Visual"
+        "Architect of the end-to-end pipeline for creating, quality-controlling, and delivering assets. Increased efficiency and up to 750.000 usd yearly savings.",
+        "✓ AWS. GIT, Salesforce Apex, Electron, Javascript, Node.js, SQL,  Rest APIs."
       ],
     },
     {
