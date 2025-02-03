@@ -90,13 +90,6 @@ export const info = {
 
   projects: [
      {
-      title: "Linked In Job Parser",
-      tech: "WordPress Custom Plugin - Rest API Integration",
-      isFeatured: true,
-      thumbnail: "/assets/images/ritornello.png",
-      liveUrl: "https://hrglobal.info/jobParser/index.php/elementor-9/",
-    },
-     {
       title: "HR Global",
       tech: "WordPress / Elementor",
       isFeatured: true,
