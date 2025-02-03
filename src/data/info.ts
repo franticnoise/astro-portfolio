@@ -21,11 +21,12 @@ export const info = {
     {
       name: "Sabag Producciones",
       location: "Full Stack Developer",
-      startDate: "Apr 2021",
+      startDate: "Apr 2020",
       endDate: "Aug 2022",
       description: [
+        "✓ Online betting casino UI development", 
+        "✓ Stack upgrade from Wordpress/PHP to React",
         "✓ Webpack / Git / Resposive Design in PHP TWIG SASS CSS MySQL JavaScript",
-        "✓ Storybook UI Development / Stack upgrade to React",
       ],
     },
 
@@ -47,7 +48,7 @@ export const info = {
       startDate: "Oct 2006",
       endDate: "Nov 2012",
       description: [
-        "✓  Web Developer Team leader. Technologies: PHP, ASP, HTML/CSS, Python, Bash, Apache",
+        "✓ Web Developer Team leader. Technologies: PHP, ASP, HTML/CSS, Python, Bash, Apache",
         "✓ QMail server / Named DNS daemon, SQL DB2 SQL, PostgreSQL, Oracle SQL",
         "✓ Internet forwarders (NAT) and security firewalls, etc.",
       ],
@@ -56,6 +57,23 @@ export const info = {
 
   education: [
     {
+      name: "Salesforce Certifications",
+      location: "https://www.salesforce.com/trailblazer/mbenamo",
+      startDate: "2023",
+      endDate: "2024",
+      description: [
+        "Salesforce Certified Platform App Builder",
+        "Salesforce Certified AI Associate",
+        "Salesforce Certified Associate"
+      ],},
+    {
+      name: "Cisco Systems Academy",
+      location: "Fundación Proydesa, Buenos Aires, Argentina",
+      startDate: "2003",
+      endDate: "2004",
+      description: ["Network Administrator Degree (CCNA 604/607)"],
+    },
+    {
       name: "Universidad de Buenos Aires",
       location: "Buenos Aires, Argentina",
       startDate: "2001",
@@ -63,13 +81,6 @@ export const info = {
       description: [
         "Ingeniera en Sistemas Informáticos",
       ],
-    },
-    {
-      name: "Cisco Systems Academy",
-      location: "Fundación Proydesa, Buenos Aires, Argentina",
-      startDate: "2003",
-      endDate: "2004",
-      description: ["Network Administrator Degree (CCNA 604/607)"],
     },
     {
       name: "Liceo Cultural Británico",
