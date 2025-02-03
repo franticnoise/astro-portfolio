@@ -14,7 +14,7 @@ export const info = {
       startDate: "March 2023",
       endDate: "Current Day",
       description: [
-        "Architect of the end-to-end pipeline for creating, quality-controlling, and delivering assets. Increased efficiency and up to 750.000 usd yearly savings.",
+        "✓ Architect of the end-to-end pipeline for creating, quality-controlling, and delivering assets. Increased efficiency and up to 750.000 usd yearly savings.",
         "✓ AWS. GIT, Salesforce Apex, Electron, Javascript, Node.js, SQL,  Rest APIs."
       ],
     },
