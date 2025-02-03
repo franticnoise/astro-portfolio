@@ -4,8 +4,8 @@ export const info = {
   jobDescription: "Web Developer",
   about: `Experienced developer knowledgeable in user interfaces, databases, systems integration, testing, and debugging processes. 
   Bringing forth expertise in testing, installation, maintenance of software systems. Proficient in JavaScript, PHP, Salesforce 
-  Apex and Visualforce, APIs, SQL, Electron JS, Wordpress, CSS/SASS/HTML. Some of companies I’ve worked for include: amazon.com, 
-  ibm.com, cafebritt.com, excen.com.ar, aena.es, among others.`,
+  Apex and Visualforce, APIs, SQL, Electron JS, Wordpress, CSS/SASS/HTML. I’ve worked for: amazon.com, 
+  ibm.com, cafebritt.com, aena.es, excen.com.ar, among others.`,
 
   experience: [
     {
