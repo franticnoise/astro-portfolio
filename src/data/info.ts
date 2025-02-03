@@ -93,7 +93,7 @@ export const info = {
       title: "HR Global",
       tech: "WordPress / Elementor",
       isFeatured: true,
-      thumbnail: "/assets/images/ritornello.png",
+      thumbnail: "/assets/images/hrglobal.png",
       githubUrl: "https://github.com/franticnoise",
       liveUrl: "https://www.hrglobal.info/",
     },
