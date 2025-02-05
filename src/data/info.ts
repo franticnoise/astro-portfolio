@@ -100,6 +100,14 @@ export const info = {
   },
 
   projects: [
+    {
+      title: "Job Parser with LinkedIn API ",
+      tech: "WordPress + Elementor Custom Plugin + Rest API  ",
+      isFeatured: true,
+      thumbnail: "/assets/images/jobparser.png",
+      githubUrl: "https://github.com/franticnoise",
+      liveUrl: "https://hrglobal.info/jobParser/index.php/elementor-9/",
+     },
      {
       title: "HR Global",
       tech: "WordPress / Elementor",
@@ -139,14 +147,14 @@ export const info = {
       githubUrl: "https://github.com/franticnoise",
       liveUrl: "http://www.franticnoise.com",
     },
-    {
-      title: "Alejandra Portfolio",
-      tech: "HTML/CSS, Javascript, React, Typescript",
-      isFeatured: true,
-      thumbnail: "/assets/images/mbportfolioalejandra.JPG",
-      githubUrl: "https://github.com/franticnoise",
-      liveUrl: "https://acharpentier.vercel.app/",
-    },
+    // {
+    //   title: "Alejandra Portfolio",
+    //   tech: "HTML/CSS, Javascript, React, Typescript",
+    //   isFeatured: true,
+    //   thumbnail: "/assets/images/mbportfolioalejandra.JPG",
+    //   githubUrl: "https://github.com/franticnoise",
+    //   liveUrl: "https://acharpentier.vercel.app/",
+    // },
     // {
     //   title: "Atsui Ramen Online Ordering App",
     //   tech: "HTML/CSS, Javascript, React, Tailwind",
