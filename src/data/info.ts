@@ -137,7 +137,7 @@ export const info = {
       isFeatured: true,
       thumbnail: "/assets/images/mbportfoliolustudio.dev.JPG",
       githubUrl: "https://github.com/franticnoise",
-      liveUrl: "https://www.lustudio.dev",
+      liveUrl: "https://lustudio.vercel.app",
     },
     {
       title: "Frantic Noise",
