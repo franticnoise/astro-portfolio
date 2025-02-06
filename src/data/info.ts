@@ -14,8 +14,8 @@ export const info = {
       startDate: "March 2023",
       endDate: "Current Day",
       description: [
-        "✓ Architect of the end-to-end pipeline for creating, quality-controlling, and delivering assets. Increased efficiency and up to 750.000 usd yearly savings.",
-        "✓ AWS. GIT, Salesforce Apex, Electron, Javascript, Node.js, SQL,  Rest APIs."
+        "✓ Creator of the automation pipeline for creating digital assets for Prime Video and MGM. Collaborated with Adobe creating custom plugins for Premiere and Photoshop, as well as Figma. Increased efficiency and and saved up to $750.000 in yearly costs.",
+        "✓ AWS, GIT, Salesforce Apex, Electron JS, ExtendScript, Javascript, React, Node.js, SQL, Rest APIs."
       ],
     },
     {
