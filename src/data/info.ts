@@ -14,7 +14,7 @@ export const info = {
       startDate: "March 2023",
       endDate: "Current Day",
       description: [
-        "✓ Creator of the automation pipeline for creating digital assets for Prime Video and MGM. Collaborated with Adobe creating custom plugins for Premiere and Photoshop, as well as Figma. Increased efficiency and and saved up to $750.000 in yearly costs.",
+        "✓ Architect for the digital asset automation pipeline for Amazon Prime Video and MGM Studios. Collaborated with Adobe creating custom plugins for Premiere and Photoshop, as well as Figma. Increased efficiency and and saved up to $750.000 in yearly costs.",
         "✓ AWS, GIT, Salesforce Apex, Electron JS, ExtendScript, Javascript, React, Node.js, SQL, Rest APIs."
       ],
     },
