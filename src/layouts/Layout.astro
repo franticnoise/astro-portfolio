@@ -1,12 +1,14 @@
 ---
 import Footer from "@components/general/Footer.astro";
 import Navbar from "@components/general/Navbar.astro";
+import ParticleBackground from "@components/general/ParticleBackground.astro";
 
 import "../styles/style.css";
 ---
 
+<ParticleBackground />
 <Navbar />
-<main class="container">
+<main class="container relative z-10">
   <slot />
 </main>
 <Footer />

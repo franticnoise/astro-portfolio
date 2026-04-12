@@ -14,6 +14,8 @@
 </head>
 <body>
 
+<canvas id="particle-canvas"></canvas>
+
 <!-- NAVBAR -->
 <header class="container navbar">
   <a class="logo" href="/">MB.</a>
@@ -414,6 +416,152 @@
       browserTheme.content = "#FFFFFF";
     }
   });
+</script>
+
+<script>
+(function () {
+  const canvas = document.getElementById("particle-canvas");
+  const ctx = canvas.getContext("2d");
+
+  let width, height;
+  let particles = [];
+  let mouse = { x: -9999, y: -9999 };
+
+  const PARTICLE_COUNT = 80;
+  const CONNECTION_DISTANCE = 150;
+  const MOUSE_RADIUS = 200;
+  const PARTICLE_SIZE = 2;
+  const SPEED = 0.4;
+
+  function isDarkMode() {
+    return document.documentElement.getAttribute("data-theme") !== "light";
+  }
+
+  function getColors() {
+    const dark = isDarkMode();
+    return {
+      particle: dark ? "rgba(51, 210, 255, 0.7)" : "rgba(152, 69, 232, 0.5)",
+      line: dark ? "51, 210, 255" : "152, 69, 232",
+      mouseLine: dark ? "221, 87, 137" : "51, 210, 255",
+    };
+  }
+
+  function resize() {
+    width = canvas.width = window.innerWidth;
+    height = canvas.height = document.body.scrollHeight;
+  }
+
+  function createParticle() {
+    return {
+      x: Math.random() * width,
+      y: Math.random() * height,
+      vx: (Math.random() - 0.5) * SPEED,
+      vy: (Math.random() - 0.5) * SPEED,
+      size: Math.random() * PARTICLE_SIZE + 1,
+    };
+  }
+
+  function init() {
+    resize();
+    particles = [];
+    for (let i = 0; i < PARTICLE_COUNT; i++) {
+      particles.push(createParticle());
+    }
+  }
+
+  function animate() {
+    ctx.clearRect(0, 0, width, height);
+    const colors = getColors();
+    const scrollY = window.scrollY;
+
+    for (let i = 0; i < particles.length; i++) {
+      const p = particles[i];
+
+      p.x += p.vx;
+      p.y += p.vy;
+
+      if (p.x < 0 || p.x > width) p.vx *= -1;
+      if (p.y < 0 || p.y > height) p.vy *= -1;
+
+      const mouseY = mouse.y + scrollY;
+      const dxM = mouse.x - p.x;
+      const dyM = mouseY - p.y;
+      const distM = Math.sqrt(dxM * dxM + dyM * dyM);
+      if (distM < MOUSE_RADIUS) {
+        p.vx += dxM * 0.00015;
+        p.vy += dyM * 0.00015;
+      }
+
+      const speed = Math.sqrt(p.vx * p.vx + p.vy * p.vy);
+      if (speed > SPEED * 2) {
+        p.vx = (p.vx / speed) * SPEED * 2;
+        p.vy = (p.vy / speed) * SPEED * 2;
+      }
+
+      ctx.beginPath();
+      ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
+      ctx.fillStyle = colors.particle;
+      ctx.fill();
+
+      for (let j = i + 1; j < particles.length; j++) {
+        const p2 = particles[j];
+        const dx = p.x - p2.x;
+        const dy = p.y - p2.y;
+        const dist = Math.sqrt(dx * dx + dy * dy);
+        if (dist < CONNECTION_DISTANCE) {
+          const opacity = 1 - dist / CONNECTION_DISTANCE;
+          ctx.beginPath();
+          ctx.moveTo(p.x, p.y);
+          ctx.lineTo(p2.x, p2.y);
+          ctx.strokeStyle = "rgba(" + colors.line + "," + (opacity * 0.3) + ")";
+          ctx.lineWidth = 0.5;
+          ctx.stroke();
+        }
+      }
+
+      if (distM < MOUSE_RADIUS) {
+        const opacity = 1 - distM / MOUSE_RADIUS;
+        ctx.beginPath();
+        ctx.moveTo(p.x, p.y);
+        ctx.lineTo(mouse.x, mouseY);
+        ctx.strokeStyle = "rgba(" + colors.mouseLine + "," + (opacity * 0.5) + ")";
+        ctx.lineWidth = 0.8;
+        ctx.stroke();
+      }
+    }
+
+    requestAnimationFrame(animate);
+  }
+
+  document.addEventListener("mousemove", function (e) {
+    mouse.x = e.clientX;
+    mouse.y = e.clientY;
+  });
+
+  document.addEventListener("mouseleave", function () {
+    mouse.x = -9999;
+    mouse.y = -9999;
+  });
+
+  document.addEventListener("touchmove", function (e) {
+    if (e.touches.length > 0) {
+      mouse.x = e.touches[0].clientX;
+      mouse.y = e.touches[0].clientY;
+    }
+  });
+
+  document.addEventListener("touchend", function () {
+    mouse.x = -9999;
+    mouse.y = -9999;
+  });
+
+  window.addEventListener("resize", function () {
+    resize();
+  });
+
+  init();
+  animate();
+})();
 </script>
 
 </body>
