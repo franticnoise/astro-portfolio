@@ -199,6 +199,14 @@ ul { list-style: none; }
   line-height: 1.6;
 }
 
+.playground-thumb {
+  width: 100%;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+  object-fit: cover;
+  max-height: 180px;
+}
+
 .tag {
   display: inline-block;
   border-radius: 9999px;
