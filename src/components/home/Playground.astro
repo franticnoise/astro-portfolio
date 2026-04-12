@@ -1,0 +1,44 @@
+---
+interface PlaygroundItem {
+  title: string;
+  description: string;
+  liveUrl: string;
+  tag: string;
+}
+
+interface Props {
+  items: PlaygroundItem[];
+}
+
+const { items } = Astro.props;
+---
+
+<section id="PLAYGROUND" class="dark:text-light mt-16">
+  <h2 class="w-[15rem]">PLAYGROUND</h2>
+  <p class="dark:text-gray mt-2 mb-8 font-inter">Games & audio experiments I've been building.</p>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+    {items.map((item) => (
+      <a
+        href={item.liveUrl}
+        target="_blank"
+        rel="noopener noreferrer"
+        class="playground-card group relative block rounded-xl border border-gray-700/50 bg-dark/50 p-6 transition-all duration-300 hover:border-transparent hover:shadow-[0_0_30px_rgba(51,210,255,0.15)] hover:-translate-y-1"
+      >
+        <span class={`inline-block rounded-full px-3 py-1 text-xs font-semibold uppercase tracking-wider mb-4 ${item.tag === "game" ? "bg-purple-500/20 text-purple-300" : "bg-cyan-500/20 text-cyan-300"}`}>
+          {item.tag === "game" ? "🎮 Game" : "🎵 Audio"}
+        </span>
+        <h3 class="text-xl font-semibold text-light group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-[#9845e8] group-hover:via-[#33d2ff] group-hover:to-[#dd5789] transition-all duration-300">
+          {item.title}
+        </h3>
+        <p class="text-sm dark:text-gray mt-3 leading-relaxed">{item.description}</p>
+        <div class="mt-4 flex items-center text-sm text-cyan-400 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+          <span>Open app</span>
+          <svg class="ml-1 w-4 h-4 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+          </svg>
+        </div>
+      </a>
+    ))}
+  </div>
+</section>

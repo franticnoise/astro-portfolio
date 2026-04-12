@@ -164,4 +164,25 @@ export const info = {
     //   liveUrl: "https://atsui-henna.vercel.app/",
     // },
   ],
+
+  playground: [
+    {
+      title: "Cul-de-Sac",
+      description: "Hold the HQ. Survive the nights. A base-defense survival game with resource management, weapons, and upgrades.",
+      liveUrl: "https://cul-de-sac-five.vercel.app/",
+      tag: "game",
+    },
+    {
+      title: "Burnt Soil",
+      description: "Isometric turn-based artillery game. Adjust wind, angle, and power to eliminate the enemy before they get you.",
+      liveUrl: "https://burnt-soil-ri86.vercel.app/",
+      tag: "game",
+    },
+    {
+      title: "Fidget Spinna",
+      description: "A tactile audio synth toy. Spin with your thumb to trigger arps, bass, and FX — drag to shift key.",
+      liveUrl: "https://fidget-spinna.vercel.app/",
+      tag: "audio",
+    },
+  ],
 };

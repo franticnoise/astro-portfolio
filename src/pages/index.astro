@@ -4,6 +4,7 @@ import { info } from "@data";
 import Layout from "@layouts/Layout.astro";
 import Hero from "@components/home/Hero.astro";
 import Experience from "@components/home/Experience.astro";
+import Playground from "@components/home/Playground.astro";
 import ProjectsWrapper from "@components/general/ProjectsWrapper.astro";
 import MetaHead from "@components/general/MetaHead.astro";
 
@@ -29,6 +30,7 @@ const featureProjects = info.projects.map((project, index) => {
       <Hero name={info.name} about={info.about} />
       <Experience title={"EXPERIENCE"} details={info.experience} />
       <Experience title={"EDUCATION"} details={info.education} />
+      <Playground items={info.playground} />
       <section>
         <h2 class="w-[15rem] dark:text-light mt-16">FREELANCE PROJECTS</h2>
         <ProjectsWrapper projects={featureProjects} />
