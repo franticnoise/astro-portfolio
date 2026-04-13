@@ -163,6 +163,8 @@ ul { list-style: none; }
 .company-logo {
   height: 24px;
   width: auto;
+  padding:2px 8px;
+  background: var(--surface);
   object-fit: contain;
   vertical-align: middle;
 }
