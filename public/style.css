@@ -141,7 +141,7 @@ ul { list-style: none; }
   .section-split { flex-direction: row; }
 }
 .section-label {
-  width: 15rem;
+  width: 10rem;
   flex-shrink: 0;
   margin-top: 4rem;
   color: var(--text);
@@ -161,16 +161,28 @@ ul { list-style: none; }
   gap: 0.5rem;
 }
 .company-logo {
-  height: 24px;
-  width: auto;
-  padding: 2px 8px;
+  height: 27px;
+    width: auto;
+    padding: 5px 9px;
   object-fit: contain;
   vertical-align: middle;
   border-radius: 4px;
   mix-blend-mode: screen;
+  background-color: white;
+}
+.company-logo2 {
+  height: 28px;
+    width: auto;
+    padding: 0px 3px;
+  object-fit: contain;
+  vertical-align: middle;
+  border-radius: 4px;
+  mix-blend-mode: screen;
+  background-color: white;
 }
 [data-theme="light"] .company-logo {
   mix-blend-mode: multiply;
+
 }
 .entry-date {
   font-size: 0.875rem;
